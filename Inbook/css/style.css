@@ -1,0 +1,763 @@
+﻿/* ============================== LAYOUT SECTION ============================== */
+
+body { 
+    position:absolute;
+    width:100%;
+    margin: 0px; 
+    font-family: Arial,sans-serif;
+    background-color: #f3f3f3;
+    /*background-color: #fff;*/
+    font-size: 16.4px;
+    direction: rtl;
+}
+
+#container {
+    width: 90%;
+    margin: 0px auto;
+    /*margin-top: 46px;*/
+}
+
+.main {
+    background-color:#ffffff;
+    width: 60%; /*85% responsive don't over go*/
+    min-width: 570px;
+    padding: 10px;
+    padding-top: 0px;
+    box-shadow: 0px 0.5px 2px rgba(211, 211, 211, 0.39);
+    font-size: 17px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.small-main {
+    width: 20%;
+    min-width: 350px;
+    text-align: center;
+    padding: 20px;
+    margin-top:40px;
+}
+
+.mainStrip {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+
+/* ============================== POST SECTION ============================== */
+
+.post {
+    background-color:#ffffff;
+    padding: 14px; 
+    width: 96%;
+    /*box-shadow: 0px 0px 2px lightgray;*/
+    font-size: 17px;
+    border-bottom: 1px solid lightgray;
+}
+
+.postImg {
+    width: 144.68px;
+    min-height: 192px; /*199.05px;*/
+    max-height: 230px;
+
+    box-shadow: 0px 0px 2px lightgray;
+    background-size: cover;
+
+    display: inline-block;
+    margin-left: 20px;
+
+    float: right;
+}
+
+.postContent {
+    display: inline-block;
+    height: 100%;
+    width: 65%; /*responsive*/
+    font-size: 15px;
+}
+
+.postTitle {
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    color: #111;
+    text-decoration: none;
+}
+
+.postTitleOverImg {
+    display: none !important;
+}
+
+
+/* ============================== BOOK SECTION ============================== */
+
+.bookImg {
+    width: 200px;
+    min-height: 265.4px;
+
+    box-shadow: 0px 0px 2px lightgray;
+    background-size: cover;
+
+    font-size: 17px;
+    color: gray;
+
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+
+.bookTitle {
+    /*padding-top: 43%;*/
+    text-shadow: 0px 0px 7px #e6e6e6;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.bookTitleOnImg {
+    display:none;
+    color: white;
+}
+
+.bookImg:hover .bookTitle {
+    color: #f5f5f5;
+}
+
+.bookImg:hover .bookTitleOnImg{
+    display: block;
+    color:white;
+}
+
+.bookImg:hover {
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    cursor:pointer;
+}
+
+
+
+/* ============================== HEADER SECTION ============================== */
+
+#header {
+    width: 100%;
+    text-align: center;
+}
+
+#logo {
+    text-decoration: none;
+    margin-top: 5%;
+    display: inline-block;
+}
+
+#logo h1 {
+    padding-left: 29px;
+    display: inline-block;
+    color: #111;
+    font-size: 75px;   
+    font-weight: bold;
+    margin: 0px;
+}
+
+#logo h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0px;
+}
+
+#logo img {
+    display:inline-block;
+}
+
+
+
+/* ============================== LOGIN SECTION ============================== */
+
+/*#loginDiv {
+    width: 20%;
+    color: lightgray;
+    font-size: 12px;
+    margin: 20px;
+    padding-left: 0%;
+    float: left;
+}
+
+#loginBtn {
+    height:28px;
+    display: inline-block;
+}*/
+
+
+
+
+
+
+/* ============================== POPUP SECTION ============================== */
+
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+.popup_close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url('/img/modal_close.png');
+    background-size: cover;
+    z-index: 2;
+    float: left;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    opacity: 1;
+    z-index: 11000;
+    left: 50%;
+    margin-left: -202px;
+    top: 200px;
+
+    padding: 15px;
+
+    width: 35%;
+    min-width: 340px;
+    max-width: 404px;
+    background: #fff;
+
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+
+}
+
+/* ============================== NAVBAR SECTION ============================== */
+
+.links {
+    margin-top: 80px;
+}
+
+.links a {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: #46629e;
+    border-left: 1px solid rgba(0,0,0,.3)
+}
+
+.links a:hover {
+    color: #2e3f68;
+}
+
+.links a:last-of-type {
+    border: none;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    background-color: #2f2f2f;
+}
+
+.navbar ul {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    display:block;
+    color: lightgray;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration:none;
+    padding-top: 6.5px;
+    padding-bottom: 5px;
+}
+
+.navbar ul li ul {
+	display: none; 
+	width: 5em;
+	background-color: white;
+    box-shadow: 0px 0px 2px lightgray;
+    font-size: 15px;
+}
+
+.navbar ul li a:hover {
+    border-bottom: 2px solid #5bb0dc;
+}
+
+.navbar ul li:hover ul {
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0; 
+}
+
+.navbar ul li:hover li {
+    width: 100%;
+	float: none; 
+}
+
+.navbar ul li:hover li a {
+	background-color: white;
+	border-bottom: 1px solid #fff;
+	color: #000; 
+}
+
+.navbar ul li li a:hover {
+	background-color: #f5f5f5;
+}
+
+.navbarUl-left {
+    float: left;
+    /*margin-left: 40px !important;*/
+}
+
+.navbarUl-right li {
+    float:right;
+}
+
+
+/* ============================== FORM SECTION ============================== */
+
+.ol-textbox {
+    font-size: 17px;
+    padding: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 50%;
+    min-width: 300px;
+    max-width: 550px;
+}
+
+.ol-textbox-aside {
+    min-width: 200px;
+}
+
+.ol-textbox-wide {
+    width: 85%;
+}
+
+.ol-textbox-popup {
+    padding: 5px;
+    width: 50%;
+    min-width: 230px;
+}
+
+.ol-button {
+    margin: 2px;
+    margin-top: 40px;
+
+    padding: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    display: inline-block;
+
+    background-color: #ebebeb;
+
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgba(0,0,0,.55);
+
+    border: none;
+    cursor: pointer;
+}
+
+.ol-button:hover {
+    color: #272727;
+    background-color: #e9e9e9;
+    box-shadow: 0px 0px 0.5px lightgray;
+}
+
+.ol-button-aside {
+    font-size: 16px;
+    font-weight: normal;
+    height: 40px;
+}
+
+.ol-button-popup {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.errorMsg {
+    color: #d74641;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+
+.ui-autocomplete {
+    font-size: 15px;
+}
+
+
+
+/* ============================== AUTOCOMPLETE SECTION ============================== */
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-size: 17px;
+}
+
+.ui-widget-content .ui-state-focus{
+    border-color: #c6c6c6;
+    background:#e6e6e6;
+}
+
+
+/* ============================== FILE UPLOAD SECTION ============================== */
+
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+    display: inline-block;
+    background:#e6e6e6;
+    cursor: pointer;
+}
+.fileUpload input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+
+
+/* ============================== VERTICAL ALIGN SECTION ============================== */
+
+.valignParent {
+    text-align: center;
+    display: table !important; 
+    overflow: hidden;
+}
+
+.valignChild {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+/* ============================== SEARCH SECTION ============================== */
+
+.searchBar {
+    text-align: center;
+}
+
+.searchTab {
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: inline-block;
+    min-width: 150px;
+    height: 28px;
+    padding-top: 8px;
+    text-align: center;
+    margin-left: 5px;
+    letter-spacing: 0.3px;
+}
+
+.searchTabActive {
+    background-color: #46629e;
+    color: white;
+}
+
+.searchDropdown {
+    font-size: 16px;
+    padding: 2px;
+    height: 42px;
+}
+
+
+
+/* ============================== AddPost SECTION ============================== */
+
+.addpostDropdown {
+    display: block;
+}
+
+.navBtn{
+    background-color: #5b78b7;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+
+    font-size: 17px;
+    width:90%;
+    min-width: 250px;
+    padding: 3px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.ol-button-disabled {
+    background-color: rgba(0,0,0,.4) !important;
+    color: lightgray;
+    cursor:initial;
+}
+
+
+/* ============================== GENERAL SECTION ============================== */
+
+h1 {
+    font-size: 150%;
+    font-weight:500;
+    margin-top: 0px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight:normal;
+    color:gray;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight:600;
+    color:#111111;
+}
+
+a {
+    color:#46629e;
+}
+
+.a {
+    text-decoration: none;
+}
+
+.a:hover {
+    text-decoration: underline;
+}
+
+.br {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.headline {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #929292;
+}
+
+
+
+/* ============================== FILTERS SECTION ============================== */
+
+.filtersMain {
+    background: #f7f7f7; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#f3f3f3, #f8f8f1); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f3f3f3, #f8f8f1); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f3f3f3, #f8f8f1); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f3f3f3, #f8f8f1); /* Standard syntax */
+
+    padding-top: 5px;
+    font-size: 14px;
+    min-height: 140px;
+    border: 1px solid #e6e6e6;
+    border-radius: 7px 7px;
+
+}
+
+.filterDiv {
+    padding: 10px;
+    padding-left: 3%;
+    padding-right: 3%;
+    float: right;
+    height: 120px;
+    display: inline-block;
+    border-left: 1px solid lightgray;
+}
+
+.filtersListItem {
+    background-color:#ffffff;
+    display: inline-block;
+    padding: 6px;
+    box-shadow: 0px 0.5px 2px rgba(211, 211, 211, 0.39);
+    font-size: 14px;
+    border-radius: 5px 5px;
+    margin-left: 5px;
+    margin-bottom: 6px;
+}
+
+.filtersListContainer {
+    width: 72%; /*85% responsive don't over go*/
+    min-width: 570px;
+    padding-left: 20px;
+    font-size: 17px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.filtersListItemRemove {
+    margin-right: 6px;
+    display: inline-block;
+    padding-bottom: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-decoration: none;
+    /*background: url('img/btn-remove.png');
+    background-size: cover;*/
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 5px 5px;
+    font-size: 13px;
+}
+
+.filtersListItemRemove:after {
+    content: "x";
+    color: white;
+}
+
+.filtersListItemRemove:hover {
+    opacity: 0.7;
+}
+
+
+
+
+/* ============================== CLEARFIX SECTION ============================== */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+
+/* ============================== MEDIA SECTION ============================== */
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+    .searchBtn {
+        width: 65px;
+    }
+
+    .catagory {
+       min-width: 170px;
+       min-height: 170px;
+    }
+
+    #container {
+        width: 90%;
+    }
+
+    .mb-main {
+        width: 85%;
+        min-width: 300px;
+        padding-top: 15px;
+    }
+
+    .filtersListContainer {
+        width: 85%;
+        min-width: 300px;
+    }
+
+    /*.bookImg {
+        width: 135px;
+        min-height: 179.145px;
+        margin: 9px;
+    }*/
+
+    .bookTitle {
+        font-size: 18px;
+        padding: 3px;
+    }
+
+    .postContent {
+        display: none;
+    }
+
+    .postImg {
+        display: block;
+        margin: 0px;
+        margin-bottom: 10px;
+        width: 135px;
+        min-height: 179.145px; /*179.145px;*/
+    }
+
+    .post {
+        border: none;
+        display: inline-block;
+        width: auto;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .postsContainer {
+        text-align: center;
+    }
+
+    .postImg:hover .bookTitle {
+        color: #f5f5f5;
+    }
+
+    .postImg:hover .bookTitleOnImg{
+        display: block;
+        color:white;
+    }
+
+    .postImg:hover {
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    }
+
+    .postTitleOverImg {
+        display: table-cell !important;
+        color: gray;
+    }
+
+    #logo {
+        margin-top: 80px !important;
+    }
+
+    .filtersMain {
+        padding-top: 5px;
+    }
+}
+
+
+
+
