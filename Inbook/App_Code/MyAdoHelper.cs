@@ -35,19 +35,15 @@ public class MyAdoHelper
     {
         string path = HttpContext.Current.Server.MapPath("App_Data/");//מיקום מסד בפורוייקט
         path += fileName;
-        //string path = HttpContext.Current.Server.MapPath("App_Data/" + fileName); //OLD //מאתר את מיקום מסד הנתונים מהשורש ועד התקייה בה ממוקם המסד
-        string connString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=" + path + ";Integrated Security=True"; //NEW
-        //string connString = "Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|Database.mdf;Integrated Security=True"; //OLD
-        
 
+        //string connString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=" + path + ";Integrated Security=True"; //NEW
+        //string connString = @"Data Source=(localdb)\mssqllocaldb;AttachDbFilename=" + path + ";Integrated Security=True"; // Working connection string for school
+        string connString = @"Data Source=SQL6002.site4now.net;Initial Catalog=DB_A26EF5_lglomer;Integrated Security=False;User Id=DB_A26EF5_lglomer_admin;Password=lgl6957m;";
 
         ////OLD CONNECTION START
-        //path = HttpContext.Current.Server.MapPath("App_Data/");//מיקום מסד בפורוייקט
-        //path += fileName;
-        ////string path = HttpContext.Current.Server.MapPath("App_Data/" + fileName);//מאתר את מיקום מסד הנתונים מהשורש ועד התקייה בה ממוקם המסד
-        //connString = @"Data Source=.\SQLEXPRESS;AttachDbFilename=" + path + ";Integrated Security=True;User Instance=True";
+        // string connString = @"Data Source=.\SQLEXPRESS;AttachDbFilename=" + path + ";Integrated Security=True;User Instance=True";
         ////OLD CONNECTION END
-        
+
 
 
         SqlConnection conn = new SqlConnection(connString);
